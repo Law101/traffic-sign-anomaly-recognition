@@ -1,0 +1,111 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Traffic Sign Anomaly Detection Dashboard</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #f5f5f5;
+            }
+            h1 {
+                color: #333;
+                text-align: center;
+            }
+            .dashboard {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .section {
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+            }
+            .section-title {
+                margin-top: 0;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 10px;
+                color: #444;
+            }
+            .image-container {
+                text-align: center;
+                margin: 15px 0;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+            .description {
+                color: #666;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Traffic Sign Anomaly Detection Dashboard</h1>
+        <div class="dashboard">
+    
+            <div class="section">
+                <h2 class="section-title">Model Training</h2>
+                <div class="description">
+                    Training performance metrics and learning curves for the autoencoder model.
+                </div>
+    
+                <div class="image-container">
+                    <img src="training_history.png" alt="Training History">
+                </div>
+        
+            </div>
+    
+            <div class="section">
+                <h2 class="section-title">Threshold Analysis</h2>
+                <div class="description">
+                    Analysis of anomaly detection thresholds showing error distributions and ROC curves.
+                </div>
+    
+                <div class="image-container">
+                    <img src="threshold_analysis.png" alt="Threshold Analysis">
+                </div>
+        
+            </div>
+    
+            <div class="section">
+                <h2 class="section-title">Detection Results</h2>
+                <div class="description">
+                    Results of traffic sign detection and anomaly classification.
+                </div>
+    
+                <div class="image-container">
+                    <img src="anomaly_detection_samples.png" alt="anomaly_detection_samples">
+                </div>
+        
+            </div>
+    
+            <div class="section">
+                <h2 class="section-title">Anomaly Samples</h2>
+                <div class="description">
+                    Examples of detected normal and anomalous traffic signs.
+                </div>
+    
+                <div class="image-container">
+                    <img src="anomaly_detection_samples.png" alt="Anomaly Detection Samples">
+                </div>
+        
+                <div class="image-container">
+                    <img src="confusion_matrix.png" alt="Confusion Matrix">
+                </div>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    
